@@ -8,4 +8,26 @@
     * {
         @apply font-body text-very-dark-blue;
     }
+
+    p {
+        @apply text-dark-grayish-blue;
+    }
+}
+
+@layer components {
+    .features-list li {
+        @apply flex gap-4;
+    }
+
+    .features-list li:not(:last-child) {
+        @apply mb-10;
+    }
+
+    .features-list .number {
+        @apply bg-bright-red rounded-full py-1 px-4 font-semibold text-very-light-gray h-fit;
+    }
+
+    .features-list h3 {
+        @apply text-lg font-bold text-dark-blue leading-[32px] mb-5;
+    }
 }
