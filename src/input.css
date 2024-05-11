@@ -30,4 +30,20 @@
     .features-list h3 {
         @apply text-lg font-bold text-dark-blue leading-[32px] mb-5;
     }
+
+    .testimonial {
+        @apply  p-6 text-center bg-very-light-gray relative;
+    }
+
+    .testimonial img {
+        @apply w-14 h-14 absolute -top-7 left-1/2 -translate-x-1/2;
+    }
+
+    .testimonial h3 {
+        @apply my-5 font-bold text-very-dark-blue;
+    }
+
+    .testimonial p {
+        @apply text-[15px];
+    }
 }
