@@ -1936,6 +1936,11 @@ p{
   background-color: hsl(0 0% 98% / var(--tw-bg-opacity));
 }
 
+.bg-very-dark-blue{
+  --tw-bg-opacity: 1;
+  background-color: hsl(233 12% 13% / var(--tw-bg-opacity));
+}
+
 .decoration-slice{
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;

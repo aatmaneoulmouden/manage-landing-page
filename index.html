@@ -23,199 +23,291 @@
     <!-- ========== Start HEADER Section ========== -->
     <header>
       <div class="container">
-        <div class="header-wrapper py-10 flex justify-between items-center">
+        <nav class="header-wrapper py-10 flex justify-between items-center">
           <a href="" class="logo">
             <img src="./assets/images/logo.svg" alt="Manage landing page" />
           </a>
-          <nav>
-            <ul class="nav-list flex gap-8">
-              <li class="nav-item">
-                <a href="">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a href="">Product</a>
-              </li>
-              <li class="nav-item">
-                <a href="">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a href="">Careers</a>
-              </li>
-              <li class="nav-item">
-                <a href="">Community</a>
-              </li>
-            </ul>
-          </nav>
+          <ul class="nav-list flex gap-8">
+            <li class="nav-item">
+              <a href="">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a href="">Product</a>
+            </li>
+            <li class="nav-item">
+              <a href="">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="">Careers</a>
+            </li>
+            <li class="nav-item">
+              <a href="">Community</a>
+            </li>
+          </ul>
           <a
             href=""
             class="cta-btn rounded-full py-3 px-6 text-very-light-gray font-medium bg-bright-red shadow-xl shadow-bright-red/30"
             >Get Started</a
           >
-        </div>
+        </nav>
       </div>
     </header>
     <!-- ========== End HEADER Section ========== -->
 
-    <!-- ========== Start INTRO Section ========== -->
-    <section id="intro">
-      <div class="container">
-        <div class="flex justify-between items-center">
-          <div class="flex-1 flex flex-col gap-8">
-            <h1 class="text-6xl text-dark-blue font-bold">
-              Bring everyone together to build better products.
+    <main>
+      <!-- ========== Start INTRO Section ========== -->
+      <section id="intro">
+        <div class="container">
+          <div class="flex justify-between items-center">
+            <div class="flex-1 flex flex-col gap-8">
+              <h1 class="text-6xl text-dark-blue font-bold">
+                Bring everyone together to build better products.
+              </h1>
+              <p class="max-w-[60%]">
+                Manage makes it simple for software teams to plan day-to-day
+                tasks while keeping the larger team goals in view.
+              </p>
+              <a
+                href=""
+                class="cta-btn rounded-full py-3 px-6 text-very-light-gray font-medium bg-bright-red shadow-xl shadow-bright-red/30 block w-fit"
+                >Get Started</a
+              >
+            </div>
+            <div class="flex-1">
+              <img
+                src="./assets/images/illustration-intro.svg"
+                alt="Manage landing page"
+                class="w-full"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ========== End INTRO Section ========== -->
+
+      <!-- ========== Start FEATURES Section ========== -->
+      <section id="features" class="py-20">
+        <div class="container">
+          <div class="flex justify-between">
+            <div class="flex-1">
+              <h2 class="text-3xl text-dark-blue font-bold mb-5 max-w-[60%]">
+                What’s different about Manage?
+              </h2>
+              <p class="max-w-[60%]">
+                Manage provides all the functionality your team needs, without
+                the complexity. Our software is tailor-made for modern digital
+                product teams.
+              </p>
+            </div>
+            <div class="flex-1">
+              <ul class="features-list">
+                <li class="feature-item">
+                  <span class="number">01</span>
+                  <div class="feature">
+                    <h3>Track company-wide progress</h3>
+                    <p>
+                      See how your day-to-day tasks fit into the wider vision.
+                      Go from tracking progress at the milestone level all the
+                      way done to the smallest of details. Never lose sight of
+                      the bigger picture again.
+                    </p>
+                  </div>
+                </li>
+                <li class="feature-item">
+                  <span class="number">02</span>
+                  <div class="feature">
+                    <h3>Advanced built-in reports</h3>
+                    <p>
+                      Set internal delivery estimates and track progress toward
+                      company goals. Our customisable dashboard helps you build
+                      out the reports you need to keep key stakeholders
+                      informed.
+                    </p>
+                  </div>
+                </li>
+                <li class="feature-item">
+                  <span class="number">03</span>
+                  <div class="feature">
+                    <h3>Everything you need in one place</h3>
+                    <p>
+                      Stop jumping from one service to another to communicate,
+                      store files, track tasks and share documents. Manage
+                      offers an all-in-one team productivity solution.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ========== End FEATURES Section ========== -->
+
+      <!-- ========== Start TESTIMONIALS Section ========== -->
+      <section id="testimonials" class="pb-20">
+        <h1 class="text-3xl text-dark-blue font-bold mx-auto w-fit mb-16">
+          What they’ve said
+        </h1>
+
+        <div class="swiper testimonialSwiper">
+          <div class="swiper-wrapper pt-7">
+            <div class="swiper-slide testimonial">
+              <img src="./assets/images/avatar-anisha.png" alt="Anisha Li" />
+              <h3 class="name">Anisha Li</h3>
+              <p class="comment">
+                “Manage has supercharged our team’s workflow. The ability to
+                maintain visibility on larger milestones at all times keeps
+                everyone motivated.”
+              </p>
+            </div>
+            <div class="swiper-slide testimonial">
+              <img src="./assets/images/avatar-ali.png" alt="Ali Bravo" />
+              <h3 class="name">Ali Bravo</h3>
+              <p class="comment">
+                “We have been able to cancel so many other subscriptions since
+                using Manage. There is no more cross-channel confusion and
+                everyone is much more focused.”
+              </p>
+            </div>
+            <div class="swiper-slide testimonial">
+              <img
+                src="./assets/images/avatar-richard.png"
+                alt="Richard Watts"
+              />
+              <h3 class="name">Richard Watts</h3>
+              <p class="comment">
+                “Manage allows us to provide structure and process. It keeps us
+                organized and focused. I can’t stop recommending them to
+                everyone I talk to!”
+              </p>
+            </div>
+            <div class="swiper-slide testimonial">
+              <img src="./assets/images/avatar-shanai.png" alt="Shanai Gough" />
+              <h3 class="name">Shanai Gough</h3>
+              <p class="comment">
+                “Their software allows us to track, manage and collaborate on
+                our projects from anywhere. It keeps the whole team in-sync
+                without being intrusive.”
+              </p>
+            </div>
+          </div>
+          <!-- <div class="swiper-pagination"></div> -->
+        </div>
+        <a
+          href=""
+          class="cta-btn rounded-full py-3 px-6 text-very-light-gray font-medium bg-bright-red shadow-xl shadow-bright-red/30 block w-fit mx-auto mt-12"
+          >Get Started</a
+        >
+      </section>
+      <!-- ========== End TESTIMONIALS Section ========== -->
+
+      <!-- ========== Start BANNER Section ========== -->
+      <section id="banner" class="py-20 bg-bright-red">
+        <div class="container">
+          <div class="flex justify-between items-center">
+            <h1
+              class="text-5xl font-bold text-very-light-gray max-w-[50%] leading-[60px]"
+            >
+              Simplify how your team works today.
             </h1>
-            <p class="max-w-[60%]">
-              Manage makes it simple for software teams to plan day-to-day tasks
-              while keeping the larger team goals in view.
-            </p>
             <a
               href=""
-              class="cta-btn rounded-full py-3 px-6 text-very-light-gray font-medium bg-bright-red shadow-xl shadow-bright-red/30 block w-fit"
+              class="cta-btn rounded-full py-3 px-6 text-bright-red font-medium bg-very-light-gray shadow-lg block w-fit"
               >Get Started</a
             >
           </div>
-          <div class="flex-1">
-            <img
-              src="./assets/images/illustration-intro.svg"
-              alt="Manage landing page"
-              class="w-full"
-            />
-          </div>
         </div>
-      </div>
-    </section>
-    <!-- ========== End INTRO Section ========== -->
+      </section>
+      <!-- ========== End BANNER Section ========== -->
+    </main>
 
-    <!-- ========== Start FEATURES Section ========== -->
-    <section id="features" class="py-20">
+    <footer class="bg-very-dark-blue">
       <div class="container">
-        <div class="flex justify-between">
-          <div class="flex-1">
-            <h2 class="text-3xl text-dark-blue font-bold mb-5 max-w-[60%]">
-              What’s different about Manage?
-            </h2>
-            <p class="max-w-[60%]">
-              Manage provides all the functionality your team needs, without the
-              complexity. Our software is tailor-made for modern digital product
-              teams.
-            </p>
-          </div>
-          <div class="flex-1">
-            <ul class="features-list">
-              <li class="feature-item">
-                <span class="number">01</span>
-                <div class="feature">
-                  <h3>Track company-wide progress</h3>
-                  <p>
-                    See how your day-to-day tasks fit into the wider vision. Go
-                    from tracking progress at the milestone level all the way
-                    done to the smallest of details. Never lose sight of the
-                    bigger picture again.
-                  </p>
-                </div>
+        <div class="row">
+          <div class="col">
+            <a href="">
+              <img src="./assets/images/logo.svg" alt="Manage Landing page" />
+            </a>
+            <ul class="social-links-list">
+              <li>
+                <a href="">
+                  <img src="./assets/images/icon-facebook.svg" alt="Facebook" />
+                </a>
               </li>
-              <li class="feature-item">
-                <span class="number">02</span>
-                <div class="feature">
-                  <h3>Advanced built-in reports</h3>
-                  <p>
-                    Set internal delivery estimates and track progress toward
-                    company goals. Our customisable dashboard helps you build
-                    out the reports you need to keep key stakeholders informed.
-                  </p>
-                </div>
+              <li>
+                <a href="">
+                  <img src="./assets/images/icon-youtube.svg" alt="Youtube" />
+                </a>
               </li>
-              <li class="feature-item">
-                <span class="number">03</span>
-                <div class="feature">
-                  <h3>Everything you need in one place</h3>
-                  <p>
-                    Stop jumping from one service to another to communicate,
-                    store files, track tasks and share documents. Manage offers
-                    an all-in-one team productivity solution.
-                  </p>
-                </div>
+              <li>
+                <a href="">
+                  <img src="./assets/images/icon-twitter.svg" alt="Twitter" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img
+                    src="./assets/images/icon-pinterest.svg"
+                    alt="Pinterest"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img
+                    src="./assets/images/icon-instagram.svg"
+                    alt="Instagram"
+                  />
+                </a>
               </li>
             </ul>
           </div>
-        </div>
-      </div>
-    </section>
-    <!-- ========== End FEATURES Section ========== -->
-
-    <!-- ========== Start TESTIMONIALS Section ========== -->
-    <section id="testimonials" class="pb-20">
-      <h1 class="text-3xl text-dark-blue font-bold mx-auto w-fit mb-16">
-        What they’ve said
-      </h1>
-
-      <div class="swiper testimonialSwiper">
-        <div class="swiper-wrapper pt-7">
-          <div class="swiper-slide testimonial">
-            <img src="./assets/images/avatar-anisha.png" alt="Anisha Li" />
-            <h3 class="name">Anisha Li</h3>
-            <p class="comment">
-              “Manage has supercharged our team’s workflow. The ability to
-              maintain visibility on larger milestones at all times keeps
-              everyone motivated.”
-            </p>
+          <div class="col">
+            <ul>
+              <li>
+                <a href="">Home</a>
+              </li>
+              <li>
+                <a href="">Pricing</a>
+              </li>
+              <li>
+                <a href="">Products</a>
+              </li>
+              <li>
+                <a href="">About Us</a>
+              </li>
+            </ul>
           </div>
-          <div class="swiper-slide testimonial">
-            <img src="./assets/images/avatar-ali.png" alt="Ali Bravo" />
-            <h3 class="name">Ali Bravo</h3>
-            <p class="comment">
-              “We have been able to cancel so many other subscriptions since
-              using Manage. There is no more cross-channel confusion and
-              everyone is much more focused.”
-            </p>
+          <div class="col">
+            <ul>
+              <li>
+                <a href="">Careers</a>
+              </li>
+              <li>
+                <a href="">Community</a>
+              </li>
+              <li>
+                <a href="">Privacy Policy</a>
+              </li>
+            </ul>
           </div>
-          <div class="swiper-slide testimonial">
-            <img src="./assets/images/avatar-richard.png" alt="Richard Watts" />
-            <h3 class="name">Richard Watts</h3>
-            <p class="comment">
-              “Manage allows us to provide structure and process. It keeps us
-              organized and focused. I can’t stop recommending them to everyone
-              I talk to!”
-            </p>
-          </div>
-          <div class="swiper-slide testimonial">
-            <img src="./assets/images/avatar-shanai.png" alt="Shanai Gough" />
-            <h3 class="name">Shanai Gough</h3>
-            <p class="comment">
-              “Their software allows us to track, manage and collaborate on our
-              projects from anywhere. It keeps the whole team in-sync without
-              being intrusive.”
-            </p>
+          <div class="col">
+            <form action="">
+              <input type="text" placeholder="Updates in your inbox…" />
+              <button>Go</button>
+            </form>
+            <p>Copyright 2020. All Rights Reserved</p>
           </div>
         </div>
-        <!-- <div class="swiper-pagination"></div> -->
       </div>
-      <a href="" class="cta-btn rounded-full py-3 px-6 text-very-light-gray font-medium bg-bright-red shadow-xl shadow-bright-red/30 block w-fit mx-auto mt-12">Get Started</a>
-    </section>
-    <!-- ========== End TESTIMONIALS Section ========== -->
+    </footer>
 
-    <!-- ========== Start BANNER Section ========== -->
-    <section id="banner" class="py-20 bg-bright-red">
-      <div class="container">
-        <div class="flex justify-between items-center">
-          <h1 class="text-5xl font-bold text-very-light-gray max-w-[50%] leading-[60px]">Simplify how your team works today.</h1>
-          <a href="" class="cta-btn rounded-full py-3 px-6 text-bright-red font-medium bg-very-light-gray shadow-lg block w-fit">Get Started</a>
-        </div>
-      </div>
-    </section>
-    <!-- ========== End BANNER Section ========== -->
-    
-
-       Home Pricing
-    Products About Us Careers Community Privacy Policy Updates in your inbox… Go
-    Copyright 2020. All Rights Reserved
-
-    <div class="attribution">
+    <!-- <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    </div> -->
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./assets/js/main.js"></script>
