@@ -15,6 +15,10 @@
 }
 
 @layer components {
+    .cta-btn {
+        @apply  rounded-full py-3 px-6;
+    }
+
     .features-list li {
         @apply flex gap-4;
     }
@@ -45,5 +49,13 @@
 
     .testimonial p {
         @apply text-[15px];
+    }
+    
+    .footer-list li:not(:last-child) {
+        @apply mb-4;
+    }
+
+    .footer-list a {
+        @apply text-very-light-gray;
     }
 }
