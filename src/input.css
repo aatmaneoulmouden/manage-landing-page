@@ -68,4 +68,11 @@
         fill: hsl(12, 88%, 59%);
     }
 
+    .mobile-menu li {
+        @apply text-center;
+    }
+
+    .mobile-menu a {
+        @apply font-semibold text-dark-blue;
+    }
 }

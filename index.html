@@ -27,7 +27,7 @@
           <a href="" class="logo">
             <img src="./assets/images/logo.svg" alt="Manage landing page" />
           </a>
-          <ul class="nav-list flex gap-8">
+          <ul class="nav-list gap-8 hidden lg:flex">
             <li class="nav-item">
               <a href="">Pricing</a>
             </li>
@@ -46,10 +46,44 @@
           </ul>
           <a
             href=""
-            class="cta-btn text-very-light-gray font-medium bg-bright-red shadow-xl shadow-bright-red/30 transition duration-150 ease-linear hover:bg-bright-red/60"
+            class="cta-btn text-very-light-gray font-medium bg-bright-red shadow-xl shadow-bright-red/30 transition duration-150 ease-linear hover:bg-bright-red/60 hidden lg:block"
             >Get Started</a
           >
+          <button class="block lg:hidden" id="open-mobile-menu">
+            <img src="./assets/images/icon-hamburger.svg" alt="" />
+          </button>
         </nav>
+        <div
+          class="mobile-menu-wrapper fixed top-0 left-0 w-full h-full bg-gradient-to-t from-very-dark-blue/35 hidden lg:hidden"
+          id="menu"
+        >
+          <div class="container">
+            <div class="close-menu-wrapper h-[104px] flex justify-end items-center">
+              <button id="close-mobile-menu">
+                <img src="./assets/images/icon-close.svg" alt="">
+              </button>
+            </div>
+            <ul
+              class="mobile-menu nav-list flex flex-col item-center gap-6 lg:hidden bg-white p-14 rounded-md shadow-md"
+            >
+              <li class="nav-item">
+                <a href="">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a href="">Product</a>
+              </li>
+              <li class="nav-item">
+                <a href="">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="">Careers</a>
+              </li>
+              <li class="nav-item">
+                <a href="">Community</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <!-- ========== End HEADER Section ========== -->
