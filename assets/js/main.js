@@ -51,9 +51,17 @@ const formSubmitBtn = document.querySelector('#submit-btn');
 
 const validateInput = (inputValue) => {
     if (inputValue.length == 0) {
+        newsletterInput.classList.remove('border-very-dark-blue');
+        newsletterInput.classList.add('border-red', 'text-red');
         errorPlaceholder.textContent = errors.empty;
     } else if (inputValue.length > 0 && !emailRegex.test(inputValue)) {
+        newsletterInput.classList.remove('border-very-dark-blue');
+        newsletterInput.classList.add('border-red', 'text-red');
         errorPlaceholder.textContent = errors.invalid;
+    } else {
+        newsletterInput.classList.remove('border-red', 'text-red');
+        newsletterInput.classList.add('border-very-dark-blue');
+        errorPlaceholder.textContent = "";
     }
 }
 

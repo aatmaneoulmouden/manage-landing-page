@@ -387,22 +387,25 @@
             </ul>
           </div>
           <div class="col flex flex-col justify-between items-end">
-            <form action="" class="flex gap-2">
-              <div>
+            <form action="">
+              <div class="flex gap-2">
                 <input
                   type="text"
                   placeholder="Updates in your inbox…"
-                  class="py-3 px-4 rounded-full has-error"
+                  class="py-3 px-4 rounded-full has-error focus:outline-none border-2 border-very-dark-blue"
                   id="newsletter-input"
                 />
-                <small class="error-placeholder text-red" id="error-placeholder"></small>
+                <button
+                  class="cta-btn text-very-light-gray font-medium bg-bright-red transition duration-150 ease-linear hover:bg-bright-red/60"
+                  id="submit-btn"
+                >
+                  Go
+                </button>
               </div>
-              <button
-                class="cta-btn text-very-light-gray font-medium bg-bright-red transition duration-150 ease-linear hover:bg-bright-red/60"
-                id="submit-btn"
-              >
-                Go
-              </button>
+              <small
+                class="error-placeholder block text-red pt-2 ml-5"
+                id="error-placeholder"
+              ></small>
             </form>
             <p>Copyright 2020. All Rights Reserved</p>
           </div>
