@@ -40,3 +40,34 @@ var swiper = new Swiper(".testimonialSwiper", {
         },
     },
 });
+
+/**
+ * Newsletter functionality
+ */
+
+const newsletterInput = document.querySelector('#newsletter-input');
+const errorPlaceholder = document.querySelector('#error-placeholder');
+const formSubmitBtn = document.querySelector('#submit-btn');
+
+const validateInput = (inputValue) => {
+    if (inputValue.length == 0) {
+        errorPlaceholder.textContent = errors.empty;
+    } else if (inputValue.length > 0 && !emailRegex.test(inputValue)) {
+        errorPlaceholder.textContent = errors.invalid;
+    }
+}
+
+let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+let errors = {
+    empty: "Please insert an email",
+    invalid: "Please insert a valid email",
+}
+
+newsletterInput.addEventListener('focusout', () => {
+    validateInput(newsletterInput.value);
+});
+
+formSubmitBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    validateInput(newsletterInput.value);
+});

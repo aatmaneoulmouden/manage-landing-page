@@ -58,9 +58,11 @@
           id="menu"
         >
           <div class="container">
-            <div class="close-menu-wrapper h-[104px] flex justify-end items-center">
+            <div
+              class="close-menu-wrapper h-[104px] flex justify-end items-center"
+            >
               <button id="close-mobile-menu">
-                <img src="./assets/images/icon-close.svg" alt="">
+                <img src="./assets/images/icon-close.svg" alt="" />
               </button>
             </div>
             <ul
@@ -386,13 +388,18 @@
           </div>
           <div class="col flex flex-col justify-between items-end">
             <form action="" class="flex gap-2">
-              <input
-                type="text"
-                placeholder="Updates in your inbox…"
-                class="py-3 px-4 rounded-full"
-              />
+              <div>
+                <input
+                  type="text"
+                  placeholder="Updates in your inbox…"
+                  class="py-3 px-4 rounded-full has-error"
+                  id="newsletter-input"
+                />
+                <small class="error-placeholder text-red" id="error-placeholder"></small>
+              </div>
               <button
                 class="cta-btn text-very-light-gray font-medium bg-bright-red transition duration-150 ease-linear hover:bg-bright-red/60"
+                id="submit-btn"
               >
                 Go
               </button>

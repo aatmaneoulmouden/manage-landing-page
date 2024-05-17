@@ -2373,6 +2373,11 @@ p{
   color: hsl(228 39% 23% / var(--tw-text-opacity));
 }
 
+.text-red{
+  --tw-text-opacity: 1;
+  color: rgb(255 148 148 / var(--tw-text-opacity));
+}
+
 .text-very-dark-blue{
   --tw-text-opacity: 1;
   color: hsl(233 12% 13% / var(--tw-text-opacity));
