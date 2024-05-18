@@ -16,7 +16,7 @@ module.exports = {
       "body": ["Be Vietnam Pro", "sans-serif"],
     },
     colors: {
-      "red": "#d90429",
+      "red": "#D90429",
       "bright-red": "hsl(12, 88%, 59%)",
       "dark-blue": "hsl(228, 39%, 23%)",
       "dark-grayish-blue": "hsl(227, 12%, 61%)",
