@@ -16,7 +16,7 @@
 
 @layer components {
     .cta-btn {
-        @apply  rounded-full py-3 px-6;
+        @apply rounded-full py-3 px-6;
     }
 
     .nav-list a {
@@ -32,15 +32,37 @@
     }
 
     .features-list .number {
-        @apply bg-bright-red rounded-full py-1 px-4 font-semibold text-very-light-gray h-fit;
+        @apply bg-bright-red rounded-full py-1 px-4 font-semibold text-very-light-gray h-fit relative;
+    }
+
+    .features-list .number::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vh;
+        background: rgba(242, 95, 58, 0.4);
+        height: 100%;
+        border-radius: 9999px;
+        z-index: -1;
+    }
+
+    @media (min-width: 1024px) {
+        .features-list .number::after {
+            display: none;
+        }
     }
 
     .features-list h3 {
-        @apply text-lg font-bold text-dark-blue leading-[32px] mb-5;
+        @apply text-[15px] font-bold text-dark-blue leading-[32px] mb-4 lg:mb-5 md:text-lg;
+    }
+
+    .features-list p {
+        @apply -ml-16 lg:ml-0;
     }
 
     .testimonial {
-        @apply  p-6 text-center bg-very-light-gray relative;
+        @apply p-6 text-center bg-very-light-gray relative;
     }
 
     .testimonial img {
@@ -54,7 +76,7 @@
     .testimonial p {
         @apply text-[15px];
     }
-    
+
     .footer-list li:not(:last-child) {
         @apply mb-4;
     }
