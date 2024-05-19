@@ -1076,10 +1076,6 @@ p{
   width: 100%;
 }
 
-.max-w-\[50\%\]{
-  max-width: 50%;
-}
-
 .flex-shrink{
   flex-shrink: 1;
 }
@@ -1624,6 +1620,10 @@ p{
 
 .gap-y-12{
   row-gap: 3rem;
+}
+
+.gap-y-8{
+  row-gap: 2rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]){
@@ -2262,6 +2262,10 @@ p{
   padding-bottom: 0.75rem;
 }
 
+.pb-12{
+  padding-bottom: 3rem;
+}
+
 .pb-20{
   padding-bottom: 5rem;
 }
@@ -2338,11 +2342,6 @@ p{
 .text-4xl{
   font-size: 2.25rem;
   line-height: 2.5rem;
-}
-
-.text-5xl{
-  font-size: 3rem;
-  line-height: 1;
 }
 
 .text-sm{
@@ -2428,10 +2427,6 @@ p{
 
 .leading-\[46px\]{
   line-height: 46px;
-}
-
-.leading-\[60px\]{
-  line-height: 60px;
 }
 
 .text-\[\#336699\]\/\[\.35\]{
@@ -2962,6 +2957,10 @@ p{
     margin-left: 0px;
   }
 
+  .lg\:ml-auto{
+    margin-left: auto;
+  }
+
   .lg\:block{
     display: block;
   }
@@ -2990,13 +2989,26 @@ p{
     row-gap: 0px;
   }
 
+  .lg\:pb-0{
+    padding-bottom: 0px;
+  }
+
   .lg\:text-left{
     text-align: left;
+  }
+
+  .lg\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
   }
 
   .lg\:text-6xl{
     font-size: 3.75rem;
     line-height: 1;
+  }
+
+  .lg\:leading-\[60px\]{
+    line-height: 60px;
   }
 }
 
